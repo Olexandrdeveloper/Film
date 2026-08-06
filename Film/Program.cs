@@ -11,6 +11,11 @@ namespace Film
 
             GC.Collect();
             GC.WaitForPendingFinalizers();
+            Console.WriteLine();
+
+            Film film = new Film("Interstellar", "Paramount Pictures", "Science Fiction", 169, 2014);
+            Console.WriteLine(film);
+            film.Dispose();
         }
 
         static void CreateAndUseFilms()
